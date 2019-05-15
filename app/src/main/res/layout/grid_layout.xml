@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Activity.Grid">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgGrid"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/textGridRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/rating"
+                android:textSize="20sp"
+                android:padding="3dp"
+                android:background="#57D348"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textGridTitle"
+            android:text="@string/nama_restaurant"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textGridLokasi"
+            android:text="@string/lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textGridJenisRestaurant"
+            android:text="@string/jenis_makanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textGridRangeHarga"
+            android:text="@string/range_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

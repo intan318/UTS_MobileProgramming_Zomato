@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UTSZomato</string>
+    <string name="handpicked">Handpicked</string>
+    <string name="saved">Saved</string>
+    <string name="mine">Mine</string>
+    <string name="trending_this_week">Trending This Week</string>
+    <string name="status">30 Places, 15118 Saves</string>
+    <string name="keterangan">Most popular restaurants in town this week</string>
+    <string name="nama_restaurant">Kayu Manis Restaurant</string>
+    <string name="rating">4.0</string>
+    <string name="lokasi">Setiabudi, Jakarta</string>
+    <string name="jenis_makanan">CASUAL DINING - ASIAN, WESTERN, ITALIAN</string>
+    <string name="range_harga">Rp300.000 for two people</string>
+    <string name="speciality">Union</string>
+    <string name="jamops">Opens at 10am</string>
+    <string name="alamat">Street Gallery Pondok Indah</string>
+    <string name="kafe_kafe_kue_roti"><![CDATA[KAFE - KAFE, KUE & ROTI]]></string>
+    <string name="alamatlengkap">Ayaka Suites, Lantai 2, Jl. Karet Pedurenan No, 45</string>
+
+
+</resources>

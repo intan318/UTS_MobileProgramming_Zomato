@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.detailRestaurant">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarr"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf= "parent"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/red"
+        ></android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/yumanis"
+        />
+
+    <TextView
+        android:id="@+id/txtNamaRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgRestaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:text="Kayu Manis Restaurant"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtJenisRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtNamaRes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="12sp"
+        android:text="CASUAL DINING - ASIAN, WESTERN, ITALIAN"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/txtAlamatRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtJenisRes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/alamatlengkap"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="@string/rating"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/imgRestaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtOpHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jamops"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txtAlamatRes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:id="@+id/lineView"
+        app:layout_constraintTop_toBottomOf="@id/txtOpHours"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+
+    <TextView
+        android:id="@+id/txtDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Directions"
+        android:textSize="14sp"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/lineView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="36dp"
+        />
+
+    <TextView
+        android:id="@+id/txtMenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menus"
+        android:textSize="14sp"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/lineView"
+        app:layout_constraintStart_toEndOf ="@id/txtDirections"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="48dp"
+        />
+
+    <TextView
+        android:id="@+id/txtReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textSize="14sp"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/lineView"
+        app:layout_constraintStart_toEndOf="@id/txtMenus"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="48dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photos"
+        android:textSize="14sp"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/lineView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        />
+
+    <View
+        android:id="@+id/lineViewBottom"
+        app:layout_constraintTop_toBottomOf="@id/txtDirections"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        />
+
+    <TextView
+        android:id="@+id/txtBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bookmark"
+        app:layout_constraintTop_toBottomOf="@id/lineViewBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtBeenThere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Been There"
+        app:layout_constraintTop_toBottomOf="@id/lineViewBottom"
+        app:layout_constraintStart_toEndOf="@id/txtBookmark"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        app:layout_constraintTop_toBottomOf="@id/lineViewBottom"
+        app:layout_constraintEnd_toStartOf="@id/txtAddReview"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtAddReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Review"
+        app:layout_constraintTop_toBottomOf="@id/lineViewBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="40dp"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</android.support.constraint.ConstraintLayout>
